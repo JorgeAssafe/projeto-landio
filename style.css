@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+ul{
+    list-style: none;
+    font-family: var(--text-font1);
+    font-size: 14px;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--text-color3);
+}
+
+
+
+:root{
+    /*root das cores*/
+    --color: white;
+    --color-principal: #5C50DC;
+    --bg-color: #FAFAFF;
+    --text-color1: #1D192C;
+    --text-color2: #3B3951;
+    --text-color3: #ABAAC0;
+    /* root das fontes*/
+    --text-font1: 'Mulish', sans-serif;
+    --text-font2: 'Quicksand', sans-serif;
+
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    background: var(--color);
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    box-shadow: 13px 0px 16px -10px;
+}
+
+#header header{
+    display: flex;
+    gap: 250px;
+    align-items: center;
+}
+
+#header .nav1 ul{
+    display: flex;
+    gap: 30px;
+}
+
+#header .nav2 ul{
+    display: flex;
+}
