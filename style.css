@@ -29,10 +29,10 @@ a{
     --bg-color: #FAFAFF;
     --text-color1: #1D192C;
     --text-color2: #3B3951;
-    --text-color3: #ABAAC0;
+    --text-color3: #8D8BAC;
     /* root das fontes*/
-    --text-font1: 'Mulish', sans-serif;
-    --text-font2: 'Quicksand', sans-serif;
+    --text-font-mulish: 'Mulish', sans-serif;
+    --text-font-quicksand: 'Quicksand', sans-serif;
 
 }
 
@@ -41,25 +41,98 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#header{
+#header-box{
     background: var(--color);
-    padding: 20px;
-    margin: auto;
+    padding: 23px;
     width: 100%;
-    box-shadow: 13px 0px 16px -10px;
+    box-shadow: 13px 0px 16px -13px;
 }
 
-#header header{
+header{
+    margin: 0 209px;
     display: flex;
-    gap: 250px;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#header .nav1 ul{
+.nav1 ul, 
+.nav2 ul{
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
-#header .nav2 ul{
-    display: flex;
+.nav1 ul li a,
+ .nav2 ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-weight: 100;
 }
+
+.nav1 ul li a:hover{
+    color: var(--color-principal);
+}
+ .nav2 ul li a:hover{
+    color: var(--color-principal);
+ }
+
+ /*-----------------------------------------------------------------------------------------------------------------------*/
+
+ main{
+    display: flex;
+    margin: 200px 230px 0;
+    width: 100%;
+ }
+
+aside{
+    width: 535px;
+}
+
+ aside h1{
+    font-size: 52px;
+    font-weight: normal;
+    color: var(--text-color2);
+    font-weight: bold;
+    font-family: var(--text-font-mulish);
+ }
+ 
+ aside p{
+    margin-top: 28px;
+    font-family: var(--text-font-quicksand);
+    line-height: 30px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+ }
+
+.hero-text{
+    color: var(--text-color3);
+}
+
+ .form-text{
+    margin-top: 42px;
+    color: var(--text-color2);
+    font-size: 0.95vw;
+}
+
+.emoji-form{
+    font-size: 20px;
+}
+
+#form{
+    width: 431px;
+    padding-right: 155px;
+    height: 54px;
+    background-color: #9699a3 /* #F0F2FA*/;
+    margin-top: 20px;
+}
+
+#input-email{
+    margin-top: 20px;
+    border: 0;
+    
+}
+
+ article img{
+    width: 500px;
+ }
