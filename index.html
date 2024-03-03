@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <title>Landio - landing page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <div id="header-box">
-            <header>
-                <img src="assets/images/logo.svg" alt="">
-                <nav class="nav1">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <nav class="nav2">
-                    <ul>
-                        <li><a href="#">Log in</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <title>Landio - Jorge</title>
+    <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
 
-        <main>
-            <aside>
-                <h1>Creative Landing Page</h1>
-                <p class="hero-text">A creative & modern landing page with Landio <br> template & We love make things amazing.</p>
-                <p class="form-text"><span class="emoji-form">🥳</span> Nemo enim ipsam voluptatem quia voluptas sit <br> aspernatur that is fugit.</p>
-                <form action="cadastro.php" id="form">
-                    <input type="email" name="email" id="input-email" placeholder="Enter Your Email">
-                    <button id="button-subscribe">Subscribe</button>
-                </form>
-            </aside>
-            <article>
-                <img src="assets/images/hero-banner.png" alt="imagem de uma moça estudando">
-            </article>
+     <nav id="nav">
+         <a href="#header"><img src="assets/images/logo.svg" alt="logotipo landio" /></a>
+         
+          <div id="btn-mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+         
+                <ul id="nav-menu">
+                  <li class="nav-menu-item"><a href="#">Home</a></li>
+                  <li class="nav-menu-item"><a href="#">Features</a></li>
+                  <li class="nav-menu-item"><a href="#">Pricing</a></li>
+                  <li class="nav-menu-item"><a href="#">Blog</a></li>
+                  <li class="nav-menu-item"><a href="#">Contact Us</a></li>
+                </ul>
+
+                <ul id="nav-menu2">
+                  <li class="nav-menu-item"><a href="#">Log in</a></li>
+                  <li class="nav-menu-item"><a href="#">Register</a></li>
+                </ul>
+     </nav>
+        
+    </header>
+
+    <main>
+            <section id="first-section">
+                <aside>
+                    <h1>Creative Landing Page</h1>
+                    <p class="hero-text">A creative & modern landing page with Landio <br> template & We love make things amazing.</p>
+                    <p class="form-text"><span class="emoji-form">🥳</span> Nemo enim ipsam voluptatem quia voluptas sit <br> aspernatur that is fugit.</p>
+                    <form action="cadastro.php" id="form">
+                        <input type="email" name="email" id="input-email" placeholder="Enter Your Email">
+                        <button id="button-subscribe">Subscribe</button>
+                    </form>
+                </aside>
+                <article>
+                    <img src="assets/images/hero-banner.png" alt="imagem de uma moça estudando">
+                </article>
+            </section>
         </main>
-</body>
+
+        <script src="script.js"></script>
+  </body>
 </html>
