@@ -19,7 +19,7 @@ a {
   /*root das cores*/
   --color: white;
   --color-principal: #5c50dc;
-  --bg-color: #fafaff;
+  --bg-color: #f8f8ff;
   --text-color1: #1d192c;
   --text-color2: #3b3951;
   --text-color3: #8d8bac;
@@ -29,23 +29,24 @@ a {
 }
 
 body {
-  background-color: var(--color);
+  background-color: var(--bg-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  height: 65px;
+  height: 70px;
   margin: auto;
-  width: 95vw;
-  color: var(--color);
+  background-color: var(--color);
+  width: 100vw;
 }
 
 #nav {
+  width: 73vw;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.05);
+  padding: 16px;
   font-family: var(--text-font-mulish);
   font-weight: 600;
 }
@@ -82,8 +83,9 @@ header {
 }
 
 @media (max-width: 992px) {
-  header {
-    width: 70vw;
+  #nav {
+    width: 75.5vw;
+    margin: auto;
   }
 
   #btn-mobile {
@@ -91,10 +93,85 @@ header {
   }
   #nav-menu,
   #nav-menu2 {
-    display: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    height: 0;
+    transition: 0.6s;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    overflow-y: hidden;
+    visibility: hidden;
+  }
+  .ativo #nav-menu {
+    display: block;
+    box-shadow: 0 3px 2px hsla(0, 0%, 0%, 0.05);
+    height: 34vh;
+    visibility: visible;
+  }
+
+  #container-fs {
+    width: 100vw;
+    max-width: 720px;
+    margin: auto;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  article img {
+    width: 100%;
   }
 }
 
-#first-section {
-  background-color: var(--bg-color);
+#container-fs {
+  max-width: 1130px;
+  margin: auto;
+  width: 90vw;
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+aside{
+    width: 425px;
+    height: 412px;
+}
+
+aside h1{
+    font-size: 3rem;
+    color: var(--text-color2);
+    font-family: var(--text-font-mulish);
+}
+
+.hero-text{
+    margin: 30px 0 45px 0;
+    color: var(--text-color3);
+    font-family: var(--text-font-quicksand);
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.form-text{
+    font-family: var(--text-font-quicksand);
+    margin-bottom: 20px;
+    color: var(--text-color2);
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#form{
+    background: #F0F2FA;
+
+    padding: 20px;
+}
+
+.emoji-form{
+    font-size: 20px;
+}
+
+article img {
+  width: 100%;
 }
