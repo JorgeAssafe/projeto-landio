@@ -1,8 +1,12 @@
-const btnMobile = document.getElementById("btn-mobile")
+"use strict"
 
-function toggleMenu() {
-  const nav = document.getElementById("nav")
-  nav.classList.toggle("ativo")
-}
+/**
+ * navbar variables
+ */
 
-btnMobile.addEventListener("click", toggleMenu)
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]")
+const header = document.querySelector("[data-header]")
+
+navToggleBtn.addEventListener("click", function () {
+  header.classList.toggle("active")
+})

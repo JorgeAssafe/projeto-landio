@@ -15,30 +15,76 @@
     />
   </head>
   <body>
-    <header></header>
-    <!--
-  
-  <main>
-          <section id="first-section">
-              <div id="container-fs">
-                <aside>
-                    <h1>Creative Landing Page</h1>
-                    <p class="hero-text">A creative & modern landing page with Landio <br> template & We love make things amazing.</p>
-                    <p class="form-text"><span class="emoji-form">🥳</span> Nemo enim ipsam voluptatem quia voluptas sit <br> aspernatur that is fugit.</p>
-                    <form action="cadastro.php" id="form">
-                        <input type="email" name="email" id="input-email" placeholder="Enter Your Email">
-                        <button id="button-subscribe">Subscribe</button>
-                    </form>
-                </aside>
-                <article>
-                    <img src="assets/images/hero-banner.png" alt="imagem de uma moça estudando">
-                </article>
-              </div>
-          </section>
-      </main>
--->
+    <!--Header-->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="assets/images/logo.svg" alt="Landio Logo" />
+        </a>
 
-    <!--ionicon link-->
+        <button class="menu-toggle-btn" data-nav-toggle-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav class="navbar">
+          <ul class="navbar list">
+            <li>
+              <a href="#hero" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="#features" class="navbar-link">Features</a>
+            </li>
+            <li>
+              <a href="#pricing" class="navbar-link">Pricing</a>
+            </li>
+            <li>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li>
+            <li>
+              <a href="#contact Us" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="header-actions">
+            <a href="#" class="header-action-link">Log in</a>
+            <a href="#" class="header-action-link">Register</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <article>
+        <!--Hero-->
+        <section class="hero" id="hero">
+          <div class="container">
+
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Creative Landing Page</h1>
+              <p class="hero-text">
+                A creative & modern landing page with Landio template & We love make things amazing.
+              </p>
+              <p class="form-text">
+                <span>🥳</span> Nemo enim ipsam voluptatem quia voluptas sit aspernatur that is fugit.
+              </p>
+
+              <form action="" class="hero-form" method="post">
+                <input type="email" name="email" placeholder="Enter Your Email" class="email-field">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+
+            <figure class="hero-banner">
+              <img src="assets/images/hero-banner.png" alt="hero-image">
+            </figure>
+
+          </div>
+        </section>
+      </article>
+    </main>
+
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
